@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const atividades = [
+    {
+      id: 1,
+      descricao: 'Primeira Atividade',
+    },
+  ];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="mt-3">
+      <ul className="list-group">
+        <li className="list-group-item">
+          {atividades[0].id} {atividades[0].descricao}
+        </li>
+        <li className="list-group-item">Segunda Atividade</li >
+        <li className="list-group-item">Terceira Atividade</li>
+        <li className="list-group-item">Quarta Atividade</li>
+      </ul>
     </div>
   );
 }
