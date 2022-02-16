@@ -9,7 +9,7 @@ Utilizando _Visual Studio Code_
 
 ### Full-Stack com REACT e ASP.NET Core 5.0 Web API, Entity Framework Core 5.0
 
-#### Vinícius de Andrade
+_Tutor: Vinícius de Andrade_
 
 Autor: **Denny Paulista Azevedo Filho**
 
