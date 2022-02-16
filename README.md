@@ -1,10 +1,12 @@
-# Front-End
+# Lista de Atividades - ToDo
 
-### Desenvolvido em ReactJS
+### Desenvolvido em ReactJS e Asp.Net Core 5 (C#)
+
+#### Com tecnologias API Restfull e Entity Framework
 
 Projeto desenvolvido para treinamento.  
 Projetos do curso [Udemy](https://www.udemy.com/)  
-Desenvolvido em PHP ReactJs e Bootstrap.  
+Desenvolvido em ReactJs, Bootstrap e Asp.Net Core (C#).  
 Utilizando _Visual Studio Code_
 
 ### Full-Stack com REACT e ASP.NET Core 5.0 Web API, Entity Framework Core 5.0
