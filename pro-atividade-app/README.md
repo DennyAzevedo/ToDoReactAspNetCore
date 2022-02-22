@@ -3,13 +3,14 @@
 ### Desenvolvido em ReactJS
 
 Projeto desenvolvido para treinamento.  
-Projetos do curso [Udemy](https://www.udemy.com/)  
-Desenvolvido em PHP ReactJs e Bootstrap.  
-Utilizando _Visual Studio Code_
+Projetos do curso [Udemy](https://www.udemy.com/course/seja-full-stack-com-react-redux-e-aspnetcore-efcore/learn/lecture/27747346?start=0#overview)
 
-### Full-Stack com REACT e ASP.NET Core 5.0 Web API, Entity Framework Core 5.0
+### Curso: Full-Stack com REACT e ASP.NET Core 5.0 Web API, Entity Framework Core 5.0
 
 _Tutor: Vinícius de Andrade_
+
+Desenvolvido em PHP ReactJs e Bootstrap.  
+Utilizando _Visual Studio Code_
 
 Autor: **Denny Paulista Azevedo Filho**
 
