@@ -1,9 +1,19 @@
-import React from 'react';
+import { useState } from 'react';
 
 export default function AtividadeForm(props) {
+  const [atividade, setAtividade] = useState({});
 
   function incriseId() {
-    return Math.max.apply(Math, props.atividades.map((item) => item.id)) + 1;
+    if(props.ativSelecionada !== undefined) {
+      return Math.max.apply(Math, props.atividades.map((item) => item.id)) + 1;
+    } else {
+      return props.ativSelecionada.id;
+    }
+  }
+
+  const inputTextHandler = (e) => {
+    const {name, value} = e.target;
+    setAtividade({...atividade, [name]: value});
   }
 
   return (
@@ -12,12 +22,13 @@ export default function AtividadeForm(props) {
         <label className="form-label">
           ID
         </label>
-        <input 
-          id="id" 
+        <input
+          name="id" 
+          id="id"
+          onChange={inputTextHandler} 
           type="text" 
-          className="form-control"
-          disabled
-          value={incriseId()}
+          className="form-control" 
+          value={atividade.id}
         />
       </div>
       <div className="col-md-6">

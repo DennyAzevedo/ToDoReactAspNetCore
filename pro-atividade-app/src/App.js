@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import AtividadeForm from './components/AtividadeForm';
-import Atividade from './components/Atividade';
+import AtividadeLista from './components/AtividadeLista';
 
 let initialState = [
   {
@@ -20,6 +20,7 @@ let initialState = [
 
 function App() {
   const [atividades, setAtividades] = useState(initialState);
+  const [atividade, setAtividade] = useState({});
 
   function addAtividade(e) {
     e.preventDefault();
@@ -37,21 +38,23 @@ function App() {
     setAtividades([...atividadesFiltradas]);
   }
 
+  function pegarAtividade(id) {
+    const atividade = atividades.filter(atividade => atividade.id === id);
+    setAtividade(atividade[0]);
+  }
+ 
   return (
     <>
       <AtividadeForm 
         atividades={atividades}
         addAtividade={addAtividade}
+        ativSelecionada={atividade}
       />
-      <div className="mt-3">
-          {atividades.map(ativ =>(
-            <Atividade
-              key={ativ.id}
-              ativ={ativ}
-              deletarAtividade={deletarAtividade}
-            />
-          ))}
-      </div>
+      <AtividadeLista 
+        atividades={atividades}
+        deletarAtividade={deletarAtividade}
+        pegarAtividade={pegarAtividade}
+      />
     </>
   );
 }
