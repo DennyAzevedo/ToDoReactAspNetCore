@@ -4,40 +4,28 @@ export default function Atividade(props) {
 
   function prioridadeLabel(param) {
     switch(param) {
-      case '1':
-        return 'Baixa';
-      case '2': 
-        return 'Normal';
-      case '3':
-        return 'Alta';
-      default:
-        return 'Não definido';
+      case '1': return 'Baixa';
+      case '2': return 'Normal';
+      case '3': return 'Alta';
+      default: return 'Não definido';
     }
   }
 
   function prioridadeStyle(param) {
     switch(param) {
-      case '1':
-        return 'smile';
-      case '2': 
-        return 'meh';
-      case '3':
-        return 'frown';
-      default:
-        return 'Não definido';
+      case '1': return 'smile';
+      case '2': return 'meh';
+      case '3': return 'frown';
+      default: return 'Não definido';
     }
   }
 
   function selectColor(param) {
     switch(param) {
-      case '1':
-        return 'success';
-      case '2': 
-        return 'secondary';
-      case '3':
-        return 'warning';
-      default:
-        return 'danger';
+      case '1': return 'success';
+      case '2': return 'secondary';
+      case '3': return 'warning';
+      default: return 'danger';
     }
   }
 
@@ -64,7 +52,7 @@ export default function Atividade(props) {
         </p>
         <div className="d-flex justify-content-end pt-2 m-0 border-top">
           <button 
-            className="btn btn-sm btn-outline-primary me-2"
+            className="btn btn-sm btn-outline-primary me-2" 
             onClick={() => props.pegarAtividade(props.ativ.id)}
           >
             <i className="fas fa-pen me-2"></i>
