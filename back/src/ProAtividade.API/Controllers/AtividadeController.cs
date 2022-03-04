@@ -11,27 +11,29 @@ namespace ProAtividade.API.Controllers
   [Route("api/[controller]")]
   public class AtividadeController : ControllerBase
   {
+    public IEnumerable<Atividade> Atividades = new List<Atividade>() {
+      new Atividade(1),
+      new Atividade(2),
+      new Atividade(3)
+    };
+
     [HttpGet]
     public IEnumerable<Atividade> Get()
     {
-      return new List<Atividade>() {
-        new Atividade(1),
-        new Atividade(2),
-        new Atividade(3)
-      };
+      return Atividades;
     }
 
     [HttpGet("{id}")]
-    public string Get(int id)
+    public Atividade Get(int id)
     {
-      return $"Meu primeiro método Get com parametro {id}";
+      return Atividades.FirstOrDefault(ati => ati.Id == id);
     }
 
     [HttpPost]
-    public Atividade Post(Atividade atividade)
+    public IEnumerable<Atividade> Post(Atividade atividade)
     {
-      atividade.Id = 1;
-      return atividade;
+
+      return Atividades.Append<Atividade>(atividade);
     }
 
     [HttpPut("{id}")]
