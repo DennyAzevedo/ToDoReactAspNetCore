@@ -12,9 +12,13 @@ namespace ProAtividade.API.Controllers
   public class AtividadeController : ControllerBase
   {
     [HttpGet]
-    public Atividade Get()
+    public IEnumerable<Atividade> Get()
     {
-      return new Atividade();
+      return new List<Atividade>() {
+        new Atividade(1),
+        new Atividade(2),
+        new Atividade(3)
+      };
     }
 
     [HttpGet("{id}")]
