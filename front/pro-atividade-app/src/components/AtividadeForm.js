@@ -10,16 +10,16 @@ const atividadeInicial = {
 export default function AtividadeForm(props) {
   const [atividade, setAtividade] = useState(atividadeAtual());
 
-  useEffect(() => {
-    if(props.ativSelecionada.id !== 0) {
-      setAtividade(props.ativSelecionada);
-    }
-  }, [props.ativSelecionada]);
+	useEffect(() => {
+		if(props.ativSelecionada.id !== 0) {
+			setAtividade(props.ativSelecionada);
+		}
+	}, [props.ativSelecionada]);
 
-  const inputTextHandler = (e) => {
-    const {name, value} = e.target;
-    setAtividade({...atividade, [name]: value});
-  };
+	const inputTextHandler = (e) => {
+  	const {name, value} = e.target;
+  	setAtividade({...atividade, [name]: value});
+	};
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
@@ -73,16 +73,16 @@ export default function AtividadeForm(props) {
 						id="prioridade" 
 						className="form-select"
 					>
-						<option defaultValue="0">
+						<option defaultValue="NaoDefinido">
 							Selecionar...
 						</option>
-						<option value="1">
+						<option value="Baixa">
 							Baixa
 						</option>
-						<option value="2">
+						<option value="Normal">
 							Normal
 						</option>
-						<option value="3">
+						<option value="Alta">
 							Alta
 						</option>
 					</select>

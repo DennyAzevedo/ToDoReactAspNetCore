@@ -2,29 +2,20 @@ import React from 'react';
 
 export default function Atividade(props) {
 
-  function prioridadeLabel(param) {
-    switch(param) {
-      case '1': return 'Baixa';
-      case '2': return 'Normal';
-      case '3': return 'Alta';
-      default: return 'Não definido';
-    }
-  }
-
   function prioridadeStyle(param) {
     switch(param) {
-      case '1': return 'smile';
-      case '2': return 'meh';
-      case '3': return 'frown';
+      case 'Baixa': return 'smile';
+      case 'Normal': return 'meh';
+      case 'Alta': return 'frown';
       default: return 'Não definido';
     }
   }
 
   function selectColor(param) {
     switch(param) {
-      case '1': return 'success';
-      case '2': return 'secondary';
-      case '3': return 'warning';
+      case 'Baixa': return 'success';
+      case 'Normal': return 'secondary';
+      case 'Alta': return 'warning';
       default: return 'danger';
     }
   }
@@ -43,7 +34,7 @@ export default function Atividade(props) {
             Prioridade:
             <span className={'ms-1 text-' + selectColor(props.ativ.prioridade)}>
               <i className={'me-1 fa-regular fa-' + prioridadeStyle(props.ativ.prioridade)}></i>
-              {prioridadeLabel(props.ativ.prioridade)}
+              {props.ativ.prioridade}
             </span>
           </h6>
         </div>
