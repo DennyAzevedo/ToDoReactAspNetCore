@@ -1,14 +1,14 @@
 import { useState, useEffect } from 'react';
 
 const atividadeInicial = {
-  id: 0,
-  titulo: '',
-  prioridade: 0,
-  descricao: ''
+	id: 0,
+	titulo: '',
+	prioridade: 0,
+	descricao: ''
 };
 
 export default function AtividadeForm(props) {
-  const [atividade, setAtividade] = useState(atividadeAtual());
+	const [atividade, setAtividade] = useState(atividadeAtual());
 
 	useEffect(() => {
 		if(props.ativSelecionada.id !== 0) {
@@ -38,16 +38,15 @@ export default function AtividadeForm(props) {
 	};
 
   function atividadeAtual() {
-    if(props.ativSelecionada.id !== 0) {
+	if(props.ativSelecionada.id !== 0) {
 			return props.ativSelecionada;
-    } else {
-      return atividadeInicial;
-    }
+	} else {
+	  return atividadeInicial;
+	}
   }
 
   return (
 		<>
-			<h1>Atividades {atividade.id !== 0 ? atividade.id : ''}</h1>
 			<form className="row g-3" onSubmit={handleSubmit}>
 				<div className="col-md-6">
 					<label className="form-label">
@@ -102,16 +101,16 @@ export default function AtividadeForm(props) {
 					<hr />
 				</div>
 				<div className="col-12 mt-0">
-					{atividade.id === 0 ? (
-						<button 
-							className="btn btn-outline-secondary" 
-							type="submit"
-						>
-							<i className="fas fa-plus me-2"></i>
-							Atividade
-						</button>
-					) : (
-						<>
+					<>
+						{atividade.id === 0 ? (
+							<button 
+								className="btn btn-outline-secondary me-2" 
+								type="submit"
+							>
+								<i className="fas fa-plus me-2"></i>
+								Atividade
+							</button>
+						) : (
 							<button 
 								className="btn btn-outline-success me-2" 
 								type="submit"
@@ -119,15 +118,15 @@ export default function AtividadeForm(props) {
 								<i className="fas fa-plus me-2"></i>
 								Salvar
 							</button>
-							<button 
-								className="btn btn-outline-warning" 
-								onClick={handleCancelar}
-							>
-								<i className="fas fa-plus me-2"></i>
-								Cancelar
-							</button>
-						</>
-					)}
+						)}
+						<button 
+							className="btn btn-outline-warning" 
+							onClick={handleCancelar}
+						>
+							<i className="fas fa-plus me-2"></i>
+							Cancelar
+						</button>
+					</>
 				</div>
 			</form>
 		</>
