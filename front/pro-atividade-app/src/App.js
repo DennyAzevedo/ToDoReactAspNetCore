@@ -19,6 +19,11 @@ function App() {
 		return response.data;
 	};
 
+	const novaAtividade = () => {
+		setAtividade({id: 0});
+		handleAtividadeModal();
+	};
+
 	useEffect(() => {
 		const getAtividades = async () => {
 			const todasAtividades = await pegaTodasAtividades();
@@ -35,10 +40,10 @@ function App() {
 		setAtividades([...atividades, response.data]);
 	};
 
-	function cancelarAtividade() {
+	const cancelarAtividade = () => {
 		handleAtividadeModal();
 		setAtividade({id: 0});
-	}
+	};
 
 	const atualizarAtividade = async (ativ) => {
 		handleAtividadeModal();
@@ -55,11 +60,11 @@ function App() {
 		}
 	};
 
-	function pegarAtividade(id) {
+	const pegarAtividade = (id) => {
 		const atividade = atividades.filter(atividade => atividade.id === id);
 		setAtividade(atividade[0]);
 		handleAtividadeModal();
-	}
+	};
  
 	return (
 		<>
@@ -67,7 +72,7 @@ function App() {
 				<h1 className="m-0 p-0">
 					Atividades {atividade.id !== 0 ? atividade.id : ''}
 				</h1>
-				<Button variant="outline-secondary" onClick={handleAtividadeModal}>
+				<Button variant="outline-secondary" onClick={novaAtividade}>
 					<i className="fas fa-plus"></i>
 				</Button>
 			</div>
