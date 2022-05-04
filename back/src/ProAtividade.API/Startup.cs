@@ -13,7 +13,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using ProAtividade.API.Data;
+using ProAtividade.Data.Context;
 
 namespace ProAtividade.API {
   public class Startup {
