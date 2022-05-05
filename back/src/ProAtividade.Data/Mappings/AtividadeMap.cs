@@ -10,8 +10,8 @@ namespace ProAtividade.Data.Mappings {
 	public class AtividadeMap : IEntityTypeConfiguration<Atividade> 	{
 		public void Configure(EntityTypeBuilder<Atividade> builder) {
 			builder.ToTable("Atividades");
-			builder.Property(a => a.Titulo).HasColumnType("varchar(100");
-			builder.Property(a => a.Descricao).HasColumnType("varchar(255");
+			builder.Property(a => a.Titulo).HasColumnType("varchar(100)");
+			builder.Property(a => a.Descricao).HasColumnType("varchar(255)");
 		}
 	}
 }
