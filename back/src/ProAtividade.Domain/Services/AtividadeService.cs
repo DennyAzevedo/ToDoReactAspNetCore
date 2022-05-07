@@ -57,12 +57,32 @@ namespace ProAtividade.Domain.Services {
 			return await _atividadeRepo.SalvarMudancasAsync();
 		}
 
-		public Task<Atividade> PegarAtividadePorIdAsync(int atividadeId) {
-			throw new NotImplementedException();
+		public async Task<Atividade> PegarAtividadePorIdAsync(int atividadeId) {
+			try {
+				var atividade = await _atividadeRepo.PegaPorIdAsync(atividadeId);
+				if(atividade == null) {
+					return null;
+				}
+				return atividade;
+			}
+			catch (System.Exception ex) {
+				
+				throw new Exception(ex.Message);
+			}
 		}
 
-		public Task<Atividade[]> PegarTodasAtividadesAsync() {
-			throw new NotImplementedException();
+		public async Task<Atividade[]> PegarTodasAtividadesAsync() {
+			try {
+				var atividades = await _atividadeRepo.PegaTodasAsync();
+				if(atividades == null) {
+					return null;
+				}
+				return atividades;
+			}
+			catch (System.Exception ex) {
+				
+				throw new Exception(ex.Message);
+			}
 		}
 	}
 }
