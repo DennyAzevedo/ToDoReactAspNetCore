@@ -42,7 +42,7 @@ namespace ProAtividade.API.Controllers {
 				return Ok(atividade);
 			} catch (System.Exception ex) {
 				return this.StatusCode(StatusCodes.Status500InternalServerError, 
-							$"Erro ao tentar recuperar Atividade com id: ${id}. Erro: {ex.Message}.");
+							$"Erro ao tentar recuperar Atividade com id: {id}. Erro: {ex.Message}.");
 			}
 		}
 
@@ -74,7 +74,7 @@ namespace ProAtividade.API.Controllers {
 				return Ok(atividade);
 			} catch (System.Exception ex) {
 				return this.StatusCode(StatusCodes.Status500InternalServerError, 
-							$"Erro ao tentar atualizar Atividade com id: ${id}. Erro: {ex.Message}.");
+							$"Erro ao tentar atualizar Atividade com id: {id}. Erro: {ex.Message}.");
 			}
 		}
 
@@ -94,7 +94,7 @@ namespace ProAtividade.API.Controllers {
 				
 			} catch (System.Exception ex) {
 				return this.StatusCode(StatusCodes.Status500InternalServerError, 
-							$"Erro ao tentar deletar Atividade com id: ${id}. Erro: {ex.Message}.");
+							$"Erro ao tentar deletar Atividade com id: {id}. Erro: {ex.Message}.");
 			}
 		}
 	}

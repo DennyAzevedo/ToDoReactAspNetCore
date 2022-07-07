@@ -11,7 +11,7 @@ namespace ProAtividade.Domain.Services {
     private readonly IAtividadeRepo _atividadeRepo;
 
 		public AtividadeService(IAtividadeRepo atividadeRepo) {
-      this._atividadeRepo = atividadeRepo;
+      		this._atividadeRepo = atividadeRepo;
 		}
 		public async Task<Atividade> AdicionarAtividade(Atividade model) {
 			if(await _atividadeRepo.PegaPorTituloAsync(model.Titulo) != null) {
@@ -30,7 +30,7 @@ namespace ProAtividade.Domain.Services {
 			if(model.DataConclusao != null) {
 				throw new Exception("Não se pode alterar atividade já concluída.");
 			}
-			if(await _atividadeRepo.PegaPorIdAsync(model.Id) == null) {
+			if(await _atividadeRepo.PegaPorIdAsync(model.Id) != null) {
 				_atividadeRepo.Atualizar(model);
 				if(await _atividadeRepo.SalvarMudancasAsync()) {
 					return model;
