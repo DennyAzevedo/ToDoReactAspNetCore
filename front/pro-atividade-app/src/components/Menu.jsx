@@ -7,7 +7,7 @@ import {
 
 export default function menu() {
 	return (
-		<Navbar bg="primary" expand="lg" >
+		<Navbar className="navbar-dark" bg="primary" expand="lg" >
 			<Container>
 				<Navbar.Brand href="#home">Ativy</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
