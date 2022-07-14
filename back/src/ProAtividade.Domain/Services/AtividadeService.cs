@@ -8,10 +8,10 @@ using ProAtividade.Domain.Interfaces.Services;
 
 namespace ProAtividade.Domain.Services {
 	public class AtividadeService : IAtividadeService {
-    private readonly IAtividadeRepo _atividadeRepo;
+    	private readonly IAtividadeRepo _atividadeRepo;
 
 		public AtividadeService(IAtividadeRepo atividadeRepo) {
-      		this._atividadeRepo = atividadeRepo;
+			this._atividadeRepo = atividadeRepo;
 		}
 		public async Task<Atividade> AdicionarAtividade(Atividade model) {
 			if(await _atividadeRepo.PegaPorTituloAsync(model.Titulo) != null) {

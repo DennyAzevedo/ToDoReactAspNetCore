@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import './App.css';
 import { Button, Modal } from 'react-bootstrap';
-import AtividadeForm from './components/AtividadeForm';
-import AtividadeLista from './components/AtividadeLista';
+import AtividadeForm from './pages/atividades/AtividadeForm';
+import AtividadeLista from './pages/atividades/AtividadeLista';
 import api from './api/atividade';
 
 function App() {
