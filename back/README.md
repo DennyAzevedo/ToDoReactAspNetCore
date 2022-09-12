@@ -1,8 +1,6 @@
-# Lista de Atividades - ToDo
+# Back-End
 
-### Desenvolvido em ReactJS e Asp.Net Core 5 (C#)
-
-#### Com tecnologias API Restfull e Entity Framework
+### Desenvolvido em ReactJS
 
 Projeto desenvolvido para treinamento.  
 Projetos do curso [Udemy](https://www.udemy.com/course/seja-full-stack-com-react-redux-e-aspnetcore-efcore/learn/lecture/27747346?start=0#overview)
@@ -11,17 +9,9 @@ Projetos do curso [Udemy](https://www.udemy.com/course/seja-full-stack-com-react
 
 _Tutor: Vinícius de Andrade_
 
-Desenvolvido em ReactJs e Asp.Net Core 5 (C#).  
+Desenvolvido em Asp.Net Core 5 - C#.
 Utilizando _Visual Studio Code_
-
-#### Bibliotecas usadas no ReactJS
-+ Axios
-+ Fontawesome
-+ React-Bootstrap
-+ Bootswatch
-+ Router DOM
 
 Autor: **Denny Paulista Azevedo Filho**
 
 _Estes códigos estão sobre a licença_ **MIT**
-
