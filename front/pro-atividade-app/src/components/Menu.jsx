@@ -17,14 +17,14 @@ export default function menu() {
 						<Nav.Link
 							activeClassName='active'
 							as={NavLink}
-							to="/clientes"
+							to="/cliente/lista"
 						>
 							Clientes
 						</Nav.Link>
 						<Nav.Link
 							activeClassName='active'
 							as={NavLink}
-							to="/atividades"
+							to="/atividade/lista"
 						>
 							Atividades
 						</Nav.Link>
