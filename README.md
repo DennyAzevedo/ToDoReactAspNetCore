@@ -1,6 +1,6 @@
 # Lista de Atividades - ToDo
 
-### Desenvolvido em ReactJS e Asp.Net Core 5 (C#)
+### Desenvolvido em ReactJS (Node v14.18.1) e Asp.Net Core 5 (C#)
 
 #### Com tecnologias API Restfull e Entity Framework
 
