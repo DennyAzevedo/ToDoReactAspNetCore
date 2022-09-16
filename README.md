@@ -15,13 +15,23 @@ Desenvolvido em ReactJs e Asp.Net Core 5 (C#).
 Utilizando _Visual Studio Code_
 
 #### Bibliotecas usadas no ReactJS
-+ Axios
-+ Fontawesome
-+ React-Bootstrap
-+ Bootswatch
-+ Router DOM
+
+-   Axios
+-   Fontawesome
+-   React-Bootstrap
+-   Bootswatch
+-   Router DOM
 
 Autor: **Denny Paulista Azevedo Filho**
 
-_Estes códigos estão sobre a licença_ **MIT**
+### Telas
 
+![Principal do Front-End](https://md.dev.br/img/TreinaAula/toasp5atividade.png)
+
+![Tela Back-End - Swagger](https://md.dev.br/img/TreinaAula/toasp5back.png)
+
+![Tela Cliente Lista](https://md.dev.br/img/TreinaAula/toasp5clientelista.png)
+
+![Tela Home](https://md.dev.br/img/TreinaAula/toasp5home.png)
+
+_Estes códigos estão sobre a licença_ **MIT**
