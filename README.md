@@ -28,7 +28,7 @@ Autor: **Denny Paulista Azevedo Filho**
 
 ![Principal do Front-End](https://mdcursos.dev.br/img/TreinaAula/toasp5atividade.png)
 
-![Tela Back-End - Swagger](https://md.dev.br/img/TreinaAula/toasp5back.png)
+![Tela Back-End - Swagger](https://mdcursos.dev.br/img/TreinaAula/toasp5back.png)
 
 ![Tela Cliente Lista](https://md.dev.br/img/TreinaAula/toasp5clientelista.png)
 
