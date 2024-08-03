@@ -26,7 +26,7 @@ Autor: **Denny Paulista Azevedo Filho**
 
 ### Telas
 
-![Principal do Front-End](https://md.dev.br/img/TreinaAula/toasp5atividade.png)
+![Principal do Front-End](https://mdcursos.dev.br/img/TreinaAula/toasp5atividade.png)
 
 ![Tela Back-End - Swagger](https://md.dev.br/img/TreinaAula/toasp5back.png)
 
