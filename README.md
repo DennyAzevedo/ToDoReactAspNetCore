@@ -24,12 +24,3 @@ Utilizando _Visual Studio Code_
 
 Autor: **Denny Paulista Azevedo Filho**
 
-### Telas
-
-![Principal do Front-End](https://mdcursos.dev.br/img/TreinaAula/toasp5atividade.png)
-
-![Tela Back-End - Swagger](https://mdcursos.dev.br/img/TreinaAula/toasp5back.png)
-
-![Tela Cliente Lista](https://mdcursos.dev.br/img/TreinaAula/toasp5clientelista.png)
-
-![Tela Home](https://mdcursos.dev.br/img/TreinaAula/toasp5home.png)
