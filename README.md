@@ -30,8 +30,6 @@ Autor: **Denny Paulista Azevedo Filho**
 
 ![Tela Back-End - Swagger](https://mdcursos.dev.br/img/TreinaAula/toasp5back.png)
 
-![Tela Cliente Lista](https://md.dev.br/img/TreinaAula/toasp5clientelista.png)
+![Tela Cliente Lista](https://mdcursos.dev.br/img/TreinaAula/toasp5clientelista.png)
 
-![Tela Home](https://md.dev.br/img/TreinaAula/toasp5home.png)
-
-_Estes códigos estão sobre a licença_ **MIT**
+![Tela Home](https://mdcursos.dev.br/img/TreinaAula/toasp5home.png)
